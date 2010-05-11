@@ -8,9 +8,6 @@ GCXXFLAGS = -O3 -g3 -Wall -pipe -fPIC  $(IFLAGS) -D_DEBUG
 
 all: swigs 
 
-
-OBJS = test.o CSparse.o
-
 ###############################################################################
 .SUFFIXES : .o .c .cpp .cc
 
