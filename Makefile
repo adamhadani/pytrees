@@ -28,7 +28,8 @@ clean:
 	-rm -rf *.pyc
 	-rm -rf *_wrap.*
 	-rm -rf TST.py
-	-rm -rf build	
+	-rm -rf build
+	-rm -rf dist	
 	-rm -rf *.egg-info
 	python setup.py clean
 

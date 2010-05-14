@@ -6,7 +6,8 @@
 
 %define DOCSTRING
 "Python SWIG bindings for the TST (Ternary Search Tree)
-data structures and algorithms library."
+data structures and algorithms library.
+To instantiate, Use one of the templated subtypes (TSTStr)."
 %enddef
 
 %module(docstring=DOCSTRING) TST
