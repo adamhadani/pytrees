@@ -16,18 +16,19 @@ all: swigs
 .c.o:
 	${CC} -c ${CCFLAGS} ${IFLAGS} -o $@ $<
 ###############################################################################
-install: swigs 
+install: swig
 	python setup.py install
 
-swigs: TST.i
+swig: TST.i
 	swig -python -c++ TST.i
 
 
 clean:
 	-rm -rf *.so
 	-rm -rf *.pyc
-	-rm -rf *.cxx
+	-rm -rf *_wrap.*
 	-rm -rf TST.py
 	-rm -rf build	
+	-rm -rf *.egg-info
 	python setup.py clean
 
